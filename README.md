@@ -1,7 +1,7 @@
 # $Daalder Shop UI #
 
-This is a demo of a shop implementation using the Daalder Api.
-It includes the most asential components needed for a basic webshop as Vue components.
+This is a demo of a shop implementation using the Daalder API.
+It includes the most essential components needed for a basic webshop using Vue components.
 
 ### Vue components include ###
 
@@ -18,7 +18,7 @@ It includes the most asential components needed for a basic webshop as Vue compo
 composer install
 npm install
 npm run dev
-php artisan surve
+php artisan serve
 ````
 
 ### Contact ###
