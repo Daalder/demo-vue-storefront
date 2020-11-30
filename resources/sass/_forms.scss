@@ -1,0 +1,7 @@
+.form-select:invalid {
+    color: theme('colors.placeholder');
+}
+
+.validation-error {
+    color: theme('colors.error');
+}

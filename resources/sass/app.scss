@@ -1,0 +1,22 @@
+// Fonts
+@import 'fonts';
+
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Modules
+@import 'animations';
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+// Components
+@import 'components/bedge';
+@import 'components/image-viewer';
+@import 'components/slider';
+@import 'components/select';
+@import 'components/scrollbar';
+
+// Main
+@import 'forms';
+@import 'main';

@@ -1,0 +1,11 @@
+.bedge {
+    @apply top-0 left-0 mt-2 ml-2 font-bold absolute inline-flex items-center px-2 py-.5 rounded-full text-sm font-medium leading-5 bg-blue-100 text-blue-800 transform rotate-tilt z-10;
+
+    &.new {
+        @apply bg-blue-100 text-blue-800;
+    }
+
+    &.sale {
+        @apply bg-green-100 text-green-800;
+    }
+}

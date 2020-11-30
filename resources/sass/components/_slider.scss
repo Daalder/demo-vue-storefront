@@ -1,0 +1,18 @@
+.noUi-target.noUi-horizontal {
+    height: 8px;
+    margin-bottom: 1rem;
+
+    .noUi-handle {
+        top: -11px;
+        width: 28px;
+        border-radius: 50%;
+
+        &:before {
+            left: 11px;
+        }
+
+        &:after {
+            left: 14px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+html, body {
+    font-family: 'RawsonPro', 'sans-serif';
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.link {
+    @apply underline;
+}
+
+.flex-break {
+    flex-basis: 100%;
+    width: auto;
+    height: 0;
+}
+
+.flex-col > .flex-break {
+    flex-basis: 100%;
+    height: auto;
+    width: 0;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.loading-pulse {
+    > div {
+        background-color: rgba(160, 174, 192, 0.2);
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.0) 100%);
+        background-repeat: no-repeat;
+        animation: loading 2s infinite;
+        background-position: -400px 0;
+
+        @keyframes loading {
+            to {
+                background-position: 400px 0;
+            }
+        }
+    }
+}
+
+.container {
+    @screen xs {
+        max-width: 100%;
+    }
+}
