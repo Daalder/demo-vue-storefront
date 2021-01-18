@@ -17,8 +17,10 @@ export default class ApiService {
 
     async _axiosRequest(method, url, options) {
         let baseUrl = process.env.MIX_DAALDER_API_URL;
+        // Fix potential double slashes
+        let targetUrl = baseUrl + '/' + url.replace(/^\/*/, "");
 
-        return axios[method](baseUrl + url, options);
+        return axios[method](targetUrl + url, options);
     }
 
     _pendingRequestsKey(url, options = {}) {
