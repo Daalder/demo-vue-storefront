@@ -1,24 +1,24 @@
 # $Daalder Shop UI #
 
-This is a demo of a shop implementation using the Daalder Api.
-It includes the most asential components needed for a basic webshop as Vue components.
+This is a demo of a shop implementation using the Daalder API.
+It includes the most essential components needed for a basic webshop using Vue.
 
-### Vue components include ###
+### Vue components included ###
 
-* product overview with filters
-* product detail
-* shopping cart
-* checkout
+* Product overview with filters
+* Product detail
+* Shopping cart
+* Checkout
 
 ### Setup ###
 
-* Fill in your api key in the .env file
+* Fill in your api key in the .env file and run:
 
 ````
 composer install
 npm install
 npm run dev
-php artisan surve
+php artisan serve
 ````
 
 ### Contact ###
