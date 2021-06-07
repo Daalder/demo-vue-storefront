@@ -14,7 +14,7 @@ class ProductController extends Controller
      * @param  int  $categoryId
      * @return \Illuminate\View\View
      */
-    public function index($categoryId = 4786)
+    public function index($categoryId = 1)
     {
         $data = [
             'api' => "/v2/categories/$categoryId/products"
