@@ -151,7 +151,7 @@ class ApiService
 
         $response = $this->client->request(
             'POST',
-            $this->baseUrl.'oauth/token',
+            $this->makeUrl('oauth/token'),
             [
                 'form_params' => [
                     'grant_type' => 'client_credentials',
