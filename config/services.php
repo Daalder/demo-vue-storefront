@@ -30,4 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'daalder' => [
+        'category_id' => env('DAALDER_CATEGORY_ID', 1)
+    ]
+
 ];

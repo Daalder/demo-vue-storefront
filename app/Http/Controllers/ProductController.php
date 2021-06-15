@@ -14,8 +14,12 @@ class ProductController extends Controller
      * @param  int  $categoryId
      * @return \Illuminate\View\View
      */
-    public function index($categoryId = 1)
+    public function index($categoryId = null)
     {
+        if(is_null($categoryId)) {
+            $categoryId = config('services.daalder.category_id');
+        }
+
         $data = [
             'api' => "/v2/categories/$categoryId/products"
         ];
