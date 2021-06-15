@@ -104,6 +104,7 @@ export default {
     },
     mounted: function () {
         if(window.app.aggregations) {
+
             this.render(window.app.aggregations);
         }
         bus.$on('aggregationsFetched', this.render);

@@ -3,7 +3,7 @@ import * as md5 from "md5";
 let collect = require('collect.js');
 
 if (typeof window.pendingRequests === 'undefined') {
-    window.pendingRequests = collect();
+    window.pendingRequests = collect({});
 }
 
 export default class ApiService {
@@ -16,11 +16,11 @@ export default class ApiService {
     }
 
     async _axiosRequest(method, url, options) {
-        let baseUrl = process.env.MIX_DAALDER_API_URL;
+        let baseUrl = process.env.MIX_DAALDER_API_URL.replace(/\/*$/, "");
         // Fix potential double slashes
         let targetUrl = baseUrl + '/' + url.replace(/^\/*/, "");
 
-        return axios[method](targetUrl + url, options);
+        return axios[method](targetUrl, options);
     }
 
     _pendingRequestsKey(url, options = {}) {

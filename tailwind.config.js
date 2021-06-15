@@ -41,6 +41,9 @@ module.exports = {
                 '.5': '0.125rem',
                 '22': '5.5rem',
             },
+            height: {
+                'fit-content': 'fit-content',
+            },
             minHeight: {
                 '400': '400px',
                 '500': '500px'
@@ -58,6 +61,10 @@ module.exports = {
             },
             lineHeight: {
                 20: '5rem'
+            },
+            cursor: {
+                'zoom-in': 'zoom-in',
+                'zoom-out': 'zoom-out',
             }
         }
     },
@@ -77,7 +84,7 @@ module.exports = {
         // borderRadius: ['important', 'responsive'],
         // borderStyle: ['important', 'responsive'],
         // borderWidth: ['important', 'responsive'],
-        // boxShadow: ['important', 'responsive', 'hover', 'focus'],
+        boxShadow: ['important', 'responsive', 'hover', 'focus'],
         // boxSizing: ['important', 'responsive'],
         // cursor: ['important', 'responsive'],
         // display: ['important', 'responsive'],

@@ -26,6 +26,14 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(ApiService $apiService)
     {
+//        $response = $apiService->get('stores/'.config('daalder.store_id'));
+//        $store = json_decode($response->body());
+//
+//        View::composer('*', function (\Illuminate\View\View $view) use ($store) {
+//            $view->with('store', $store);
+//            $view->with('user', auth()->user());
+//        });
+
         View::composer('*', function (\Illuminate\View\View $view) use ($apiService) {
             $response = $apiService->get('stores/'.config('daalder.store_id'));
             $view->with('store', json_decode($response->body()));

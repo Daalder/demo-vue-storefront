@@ -1,6 +1,6 @@
 <template>
     <div v-if="show" class="fixed z-10 inset-0 overflow-y-auto">
-        <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:pt-0 lg:p-0">
+        <div class="flex items-center justify-center min-h-full py-4 px-4 text-center sm:pt-0 lg:p-0">
             <transition name="fade" @after-leave="closed" @after-enter="opened">
                 <div v-if="isOpen" @click="close" class="fixed inset-0 transition-opacity">
                     <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
@@ -57,12 +57,16 @@ export default {
             this.show = true;
             await this.$nextTick();
             this.isOpen = true;
+
+            document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
         },
         opened() {
             this.$emit('opened');
         },
         close() {
             this.isOpen = false;
+            document.getElementsByTagName("body")[0].style.overflowY = 'auto';
+
             this.$emit('closing');
         },
         closed() {

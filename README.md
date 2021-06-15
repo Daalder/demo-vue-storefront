@@ -12,8 +12,8 @@ It includes the most essential components needed for a basic webshop using Vue.
 
 ### Setup ###
 
-* Fill in your api key in the .env file and run:
-
+* Set `DAALDER_API_URL`,  `DAALDER_API_CLIENT_ID`, `DAALDER_API_CLIENT_SECRET`, and `STORE_ID` keys in the .env file
+* Then, run the following commands:
 ````
 composer install
 npm install

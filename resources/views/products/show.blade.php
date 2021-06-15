@@ -1,7 +1,7 @@
 @extends('layout.default')
 
 @section('content')
-    <div class="mt-12">
+    <div class="lg:mt-12">
         <div class="flex flex-col md:flex-row min-h-500">
             <div class="w-full md:w-1/2">
                 <image-viewer
